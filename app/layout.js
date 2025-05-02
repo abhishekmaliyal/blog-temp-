@@ -1,5 +1,19 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
+
 import "./globals.css";
+
+const funnel = localFont({
+  src: "../public/fonts/Funnel.ttf",
+  display: "swap",
+  variable: "--font-funnel",
+});
+
+const gothic = localFont({
+  src: "../public/fonts/Gothic.ttf",
+  display: "swap",
+  variable: "--font-gothic",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -18,10 +32,12 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}
-      >
+    <html
+      lang="en"
+      className={`${funnel.variable} ${gothic.variable}`}
+      suppressHydrationWarning
+    >
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased overflow-x-hidden`}>
         {children}
       </body>
     </html>

@@ -120,3 +120,16 @@
     @apply bg-background text-foreground;
   }
 }
+
+  .marqueetext, .links, .contact, .descriptiontext {
+  font-family: var(--font-funnel);
+  font-style: normal;
+  font-weight: 700;
+}
+
+.logo{
+  font-family: var(--font-gothic);
+  font-style: normal;
+  font-weight: 700;
+}
+
