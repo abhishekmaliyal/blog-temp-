@@ -121,7 +121,7 @@
   }
 }
 
-  .marqueetext, .links, .contact, .descriptiontext {
+  .marqueetext, .links, .contact, .descriptiontext, .articles {
   font-family: var(--font-funnel);
   font-style: normal;
   font-weight: 700;
@@ -133,3 +133,6 @@
   font-weight: 700;
 }
 
+div{
+  border: 1px solid gray;
+}
