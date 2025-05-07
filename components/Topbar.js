@@ -7,26 +7,26 @@ export default function Topbar() {
   return (
     <>
       <div className="Topbar fixed w-[111rem] right-17 place-content-center h-28 z-10 flex items-center justify-between px-10">
-          <div className="logo text-4xl bg-white">BLOG</div>
+          <Link href="/"><div className="logo text-4xl bg-white">BLOG</div></Link>
           <div className="links">
             <NavigationMenu>
               <NavigationMenuList>
                 <NavigationMenuItem>
                   <NavigationMenuTrigger className="text-2xl">Articles</NavigationMenuTrigger>
                   <NavigationMenuContent className="w-36">
-                    <NavigationMenuLink className="w-full" href="#">
+                    <NavigationMenuLink className="w-full" href="/pages/featured">
                       <div className="links text-lg w-[225px] flex items-center">
                         featured
                         <ChevronsRight />
                       </div>
                     </NavigationMenuLink>
-                    <NavigationMenuLink className="w-full" href="#">
+                    <NavigationMenuLink className="w-full" href="/pages/latest">
                       <div className="links text-lg w-[225px] flex items-center">
                         latest
                         <ChevronsRight />
                       </div>
                     </NavigationMenuLink>
-                    <NavigationMenuLink className="w-full" href="#">
+                    <NavigationMenuLink className="w-full" href="/pages/allarticles">
                       <div className="links text-lg w-[225px] flex items-center">
                         show all
                         <ChevronsRight />
